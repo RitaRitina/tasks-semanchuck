@@ -8,3 +8,9 @@
  *
  * 4. Вызовите функцию
  */
+
+function myFn() {
+	console.log('Rita');
+}
+
+myFn()

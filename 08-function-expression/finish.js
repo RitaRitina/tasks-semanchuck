@@ -10,3 +10,10 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+const myFn = function (name) {
+	return `Привет, ${name}`
+}
+
+console.log(myFn('Rita'))
+console.log(myFn('Artem'))

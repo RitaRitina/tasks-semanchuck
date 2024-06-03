@@ -10,3 +10,14 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+
+const myFn = () => {
+	return 'Hello, World!'
+}
+
+console.log(myFn())
+
+
+const myFn2 = () => 'Hello, World!'
+
+console.log(myFn2())

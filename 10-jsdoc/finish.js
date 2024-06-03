@@ -12,3 +12,16 @@
  *
  * 4. Вызовите функцию
  */
+
+/**
+ * Функция возвращает разницу двух чисел
+ * 
+ * @param {number} a - первый параметр
+ * @param {number} b
+ * @returns {number} Разница чисел
+*/
+
+const myFn = (a, b) => a - b;
+
+console.log(myFn(5, 6))
+
