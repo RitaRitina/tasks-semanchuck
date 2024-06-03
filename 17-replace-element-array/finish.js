@@ -8,3 +8,12 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+const myArray = ['Rita', false, 10, []]
+
+console.log(myArray)
+
+myArray[1] = true
+
+console.log(myArray)
+

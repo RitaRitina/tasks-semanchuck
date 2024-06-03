@@ -6,3 +6,10 @@
  *
  * 3. Выведите в консоль длину массива
  */
+
+
+const myArray = [true, 'Rita', 5]
+
+console.log(myArray[0])
+console.log(myArray[2])
+console.log(myArray.length)

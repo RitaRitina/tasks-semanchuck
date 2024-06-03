@@ -4,3 +4,15 @@
  *
  * 2. Используйте стрелочную функцию
  */
+
+const myFn = () => {
+	setTimeout(() => console.log("Привет, мир!"), 3000);
+}
+
+myFn()
+
+const myFn2 = () => setTimeout(() => console.log("Привет, мир!"), 4000)
+
+myFn2()
+
+setTimeout(() => console.log("Привет, мир!"), 5000)

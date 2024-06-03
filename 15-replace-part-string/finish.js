@@ -6,3 +6,18 @@
  *
  * 3. Выведите значение второй переменной в консоль
  */
+
+// const myString = 'Good Morning'
+
+// const newString = myString.replace('Morning', 'Evening')
+
+// console.log(newString)
+
+
+const a = /morning/gi
+
+const myString = 'Good Morning'
+
+const newString = myString.replace(a, 'Evening')
+
+console.log(newString)

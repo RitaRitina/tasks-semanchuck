@@ -12,3 +12,22 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+
+const myString = 'orange'
+const myString2 = new String(myString)
+
+console.log( myString instanceof String) 
+console.log( myString2 instanceof String)
+
+console.log( typeof myString)
+console.log( typeof myString2)
+
+const newString = myString.toUpperCase()
+const newString2 = myString2.toUpperCase()
+
+console.log(myString)
+console.log(myString2)
+
+console.log(newString)
+console.log(newString2)
