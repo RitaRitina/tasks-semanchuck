@@ -11,3 +11,5 @@ setTimeout(function myFn() {
 }, 2000)
 
 // myFn() в этом поле нет такой функции
+
+console.log(parseInt(false))
