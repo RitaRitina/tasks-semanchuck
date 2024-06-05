@@ -7,9 +7,24 @@
  */
 
 const myObject = {
-  key1: true,
-  key5: 10,
-  key3: 'abc',
-  key4: null,
-  key10: NaN,
+	key1: true,
+	key5: 10,
+	key3: 'abc',
+	key4: null,
+	key10: NaN,
 }
+
+// for (const key in myObject) {
+// 	if (key === "key1" || key === "key3") {
+// 		console.log(myObject[key])
+// 	}
+// }
+
+console.log(Object.keys(myObject))
+
+Object.keys(myObject).forEach(key => {
+	if (key === "key1" || key === "key3") {
+		console.log(myObject[key])
+	}
+})
+
