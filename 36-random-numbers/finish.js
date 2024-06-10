@@ -14,7 +14,36 @@
  *  - для добавления случайного числа в массив с возвратом измененного массива
  */
 
-const MIN = 1000
-const MAX = 9999
+const min = 0
+const max = 3
 
-const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
+const myNumbers = [1, 2355, 7235, 8135, 1762, 2361, 8351]
+
+const getRandomInt = (min, max) => {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	const result = Math.floor(Math.random() * (max - min));	
+	return result
+}
+
+const checheckingValue = (arr) => {
+	const arrLength = arr.length;
+	let stopWhile = false
+	while (!stopWhile) {
+		const randomEl = getRandomInt(min, max);
+
+		if (!arr.includes(randomEl)) {
+			arr.push(randomEl);
+			stopWhile = true
+		} else {
+			console.log('repeat element')
+		}
+	} 
+
+	return arr;
+}
+
+console.log(checheckingValue(myNumbers))
+
+
+
