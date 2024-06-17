@@ -23,6 +23,28 @@ const fruits = [
 
 const primitiveTypesArray = [25, 'x', true, undefined, null]
 
+// const isElementInArray = (searchElement, inputArray) => {
+// 	if (typeof searchElement !== 'object') {
+// 		return inputArray.includes(searchElement)
+// 	}
+// 	if (typeof searchElement === 'object') {
+// 		const newArray = inputArray.map(el => Array.isArray(el) ? el.join(', ') : JSON. stringify(el))
+// 		const newSearchElement = Array.isArray(searchElement) ? searchElement.join(', ') : JSON. stringify(searchElement)
+// 		return newArray.includes(newSearchElement)
+// 	}
+// }
+const isElementInArray = (searchElement, inputArray) => {
+	if (typeof searchElement !== 'object') {
+		return inputArray.includes(searchElement)
+	}
+	if (typeof searchElement === 'object') {
+		const newArray = inputArray.map(el => JSON. stringify(el))
+		const newSearchElement = JSON. stringify(searchElement)
+		return newArray.includes(newSearchElement)
+	}
+}
+
+
 console.log(isElementInArray(['css', 'flexbox'], tags)) // true
 
 console.log(isElementInArray(['flexbox', 'css'], tags)) // false

@@ -14,10 +14,19 @@
 const a = [1, 2, 3]
 const b = [1, 2, 3]
 
-console.log(a === b) // false (Почему?)
+console.log(a === b) // false (Почему?) сравниваются ссылки на обьектыБ а не их содержимое
 
 const c = [2, 1, 3]
 const d = [1, 2, 3, 4]
+
+const areArraysEqual = (firstArray, secondArray) => {
+	// проверка на равенство массивов по количеству элементов
+	if (firstArray.length === secondArray.length 
+		&& firstArray.every((_el, index) => firstArray[index] === secondArray[index])) {
+			return true
+	} 
+	return false
+}
 
 console.log(areArraysEqual(a, b)) // true
 console.log(areArraysEqual(a, c)) // false
