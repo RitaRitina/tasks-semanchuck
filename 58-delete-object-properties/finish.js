@@ -17,6 +17,13 @@ let person = {
   cartId: 435,
 }
 
+// const deleteProperties = ({ _id, processed, cart, ...rest }) => rest
+// person = deleteProperties(person)
+{
+	let _id, processed, cart
+	;({ _id, processed, cart, ...person } = person)
+}
+
 console.log(person)
 /*
 {
