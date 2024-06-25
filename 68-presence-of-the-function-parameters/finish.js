@@ -6,8 +6,20 @@
  */
 
 function square(a) {
-  console.log(a * a)
+	// if (arguments.length === 0) {
+	// 	throw new Error('Функция "square" не может быть вызвана без аргумента')
+	// }
+	// console.log(a * a)
+	try {
+		if (arguments.length === 0) {
+		throw new Error('Функция "square" не может быть вызвана без аргумента')
+		}
+		console.log(a * a)
+	} catch (error) {
+		console.error(error)
+	}
 }
+
 
 square(10)
 // 100
@@ -15,3 +27,5 @@ square(10)
 square()
 // ДО: NaN
 // ПОСЛЕ: Uncaught Error: Функция "square" не может быть вызвана без аргумента
+
+console.log('hi')

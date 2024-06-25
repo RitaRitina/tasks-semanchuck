@@ -10,6 +10,27 @@
  * он должен получить значение по умолчанию 0
  */
 
+// const shortPerson = (person) => {
+// 	const { name: n, info: {country: c, age: a}, postsQuantity: p = 0 } = person
+// 	return {
+// 		n,
+// 		c,
+// 		a,
+// 		p,
+// 	}
+// }
+
+const shortPerson = 
+	({ name: n, 
+		info: {country: c, age: a}, 
+		postsQuantity: p = 0 }) => 
+	({
+		n,
+		c,
+		a,
+		p,
+	})
+
 const person1 = {
   name: 'Mike',
   info: {

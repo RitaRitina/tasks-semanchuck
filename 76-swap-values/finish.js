@@ -7,8 +7,12 @@
 let a = 'first'
 let b = 'second'
 
-console.log(a, b)
+console.log(a, b);
 // first second
+
+// b = [a, a = b][0];
+
+[a, b] = [b, a]
 
 // Напишите код здесь
 
