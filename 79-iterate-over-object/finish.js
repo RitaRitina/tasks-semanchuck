@@ -16,6 +16,19 @@ const objectWithNumbers = {
   d: 12,
 }
 
+const sumObjectValues = (objectWithNumbers) => {
+	let arrayNumbers = []
+
+	for (key in objectWithNumbers) {
+		if (objectWithNumbers.hasOwnProperty(key) && typeof objectWithNumbers[key] === 'number') {
+			arrayNumbers.push(objectWithNumbers[key])
+		}
+	}
+	console.log(arrayNumbers)
+	return arrayNumbers.reduce((sum, num) => sum + num, 0)
+}
+
+
 // Создайте функцию здесь
 
 const result = sumObjectValues(objectWithNumbers)
